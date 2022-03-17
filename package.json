@@ -1,0 +1,31 @@
+{
+  "name": "la_nimes_alerie",
+  "version": "0.0.1",
+  "description": "business case de la nîmes'alerie",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass ./src/sass/style.scss ./public/css/style.css --watch",
+    "build": "sass ./src/sass/style.scss ./public/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arthur042/Business_case.git"
+  },
+  "keywords": [
+    "sass",
+    "npm"
+  ],
+  "author": "Arthur André",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arthur042/Business_case/issues"
+  },
+  "homepage": "https://github.com/Arthur042/Business_case#readme",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}
