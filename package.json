@@ -27,5 +27,8 @@
   "homepage": "https://github.com/Arthur042/Business_case#readme",
   "devDependencies": {
     "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }

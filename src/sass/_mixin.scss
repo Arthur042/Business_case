@@ -1,0 +1,10 @@
+// gradient banniere haut bas
+@mixin gradient_banner {
+    background: rgb(5,117,230);
+    background: linear-gradient(90deg, rgba(5,117,230,1) 0%, rgba(0,242,96,1) 50%);
+}
+
+@mixin gradient_icon {
+    background: rgb(5,117,230);
+    background: linear-gradient(160deg, rgba(5,117,230,1) 0%, rgba(0,242,96,1) 62%);
+}
