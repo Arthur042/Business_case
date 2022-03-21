@@ -12,64 +12,85 @@
 
     <header>
 
-        <div class="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 banner">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="d-none d-md-inline-block"><span class="d-none">livraison</span></div>
+                            <p>Livraison offerte dès 59€</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="d-none d-md-inline-block"><span class="d-none">retour gratuit</span></div>
+                            <p>Retour gratuit sous 30 jours</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="d-none d-md-inline-block"><span class="d-none">paiement sécurisé</span></div>
+                            <p>paiement sécurisé</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo_search_cut col-12">
+                    <div class="row">
+                                <div class="col-3 lna_logo p-0 ps-2 mb-4">
+                                    <h1 class="d-none">La Nîmes'alerie</h1>
+                                    <img src="img/header/animalerieLogo.png" alt="logo de la nîmes'alerie">
+                                </div>
+                                <form action="" method="get" class="col-9 ps-5 mb-4">
+                                    <div class="input-group d-inline-block d-md-flex">
+                                        <div class="form-outline">
+                                            <input type="search" id="search" class="form-control" placeholder="Recherche ( nom du produit, marque )"/>
+                                            <label class="form-label d-none" for="search">barre de recherche</label>
+                                        </div>
+                                        <button type="button" class="btn lna_btn_fade d-none">
+                                            mettre une image
+                                        </button>
+                                    </div>
+                                </form>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="img/icon/header/account.svg" alt="icone de compte">
+                                    <p class="d-none">Connectez-vous</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="img/icon/header/shop_empty.svg" alt="icone de panier">
+                                    <p class="d-none">Panier</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="img/icon/header/panier.svg" alt="icone de commande">
+                                    <p class="d-none">Mes commandes</p>
+                                </div>
 
-            <img src="img/icon/header/expedition.svg" alt="icone de livraison">
-            <p>Livraison offerte dès 59€</p>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
 
-            <img src="img/icon/header/delivery.svg" alt="icone de retour">
-            <p>Retour gratuit sous 30 jours</p>
-
-            <img src="img/icon/header/safety_certificate.svg" alt="icone de sécurité de paiement">
-            <p>paiement sécurisé</p>
-
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    ...
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="d-none">
+                    <ul>
+                        <li><a href="#"><img src="img/icon/header/dog.svg" alt="icone de chien"> Chien</a></li>
+                        <li><a href="#"><img src="img/icon/header/cat.svg" alt="icone de chat"> Chat</a></li>
+                        <li><a href="#"><img src="img/icon/header/rabbit.svg" alt="icone de Rongeur"> Rongeur</a></li>
+                        <li><a href="#"><img src="img/icon/header/fish.svg" alt="icone de poisson"> Aqua</a></li>
+                        <li><a href="#"><img src="img/icon/header/turtle.svg" alt="icone de reptile"> Terrario</a></li>
+                        <li><a href="#"><img src="img/icon/header/bird.svg" alt="icone d'oiseau"> Oiseau</a></li>
+                        <li><a href="#"><img src="img/icon/header/rocket.svg" alt="icone de fusée"> Envoyez votre animal dans l'espace</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-
-        <div id="logo_search_cut">
-
-            <div>
-                <h1>La Nîmes'alerie</h1>
-                <img src="img/header/animalerieLogo.png" alt="logo de la nîmes'alerie">
-            </div>
-
-            <div class="search">
-                <p>Recherche ( nom du produit, marque, référence, ... )</p>
-                <img src="img/icon/header/search.svg" alt="icone loupe de recherche">
-            </div>
-
-            <div>
-                <div>
-                    <img src="img/icon/header/account.svg" alt="icone de compte">
-                    <p>Connectez-vous</p>
-                </div>
-
-                <div>
-                    <img src="img/icon/header/shop_empty.svg" alt="icone de panier">
-                    <p>Panier</p>
-                </div>
-
-                <div>
-                    <img src="img/icon/header/panier.svg" alt="icone de commande">
-                    <p>Mes commandes</p>
-                </div>
-
-            </div>
-
-        </div>
-        
-        <nav>
-
-            <ul>
-                <li><a href="#"><img src="img/icon/header/dog.svg" alt="icone de chien"> Chien</a></li>
-                <li><a href="#"><img src="img/icon/header/cat.svg" alt="icone de chat"> Chat</a></li>
-                <li><a href="#"><img src="img/icon/header/rabbit.svg" alt="icone de Rongeur"> Rongeur</a></li>
-                <li><a href="#"><img src="img/icon/header/fish.svg" alt="icone de poisson"> Aqua</a></li>
-                <li><a href="#"><img src="img/icon/header/turtle.svg" alt="icone de reptile"> Terrario</a></li>
-                <li><a href="#"><img src="img/icon/header/bird.svg" alt="icone d'oiseau"> Oiseau</a></li>
-                <li><a href="#"><img src="img/icon/header/rocket.svg" alt="icone de fusée"> Envoyez votre animal dans l'espace</a></li>
-            </ul>
-
-        </nav>
 
     </header>
 

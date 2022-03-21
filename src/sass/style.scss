@@ -1,6 +1,8 @@
-// reboot de bootstrap
-@import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+// Bootstrap custom
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 // sass perso
-@import 'variables';
-@import 'mixin';
+@import 'variables/variables';
+@import 'variables/mixin';
+@import 'text-format';
+@import 'header'

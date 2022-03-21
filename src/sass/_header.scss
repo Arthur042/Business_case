@@ -1,0 +1,25 @@
+header{
+
+    .logo_search_cut{
+
+        > .row{
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                width: 100%;
+            }
+
+            .input-group{
+
+                input::placeholder{
+                    font-family: $main;
+                    font-weight: bold;
+                    font-size: .6rem;
+                    color: #807878;
+                }
+            }
+        }
+    }
+
+}
