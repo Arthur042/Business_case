@@ -1,0 +1,34 @@
+.lna_btn_main{
+    font-family: $headings_product;
+    padding: .6rem 3rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    transition: all 0.15s ease-in-out;
+    box-shadow: $shadow_main;
+
+    &.lna_btn_product{
+        padding: 0.5rem 1.5rem;
+        font-size: .8rem;
+    }
+
+    &.lna_btn_light{
+        background-color: $light;
+        color: $dark;
+
+        &:hover{
+            background-color: $dark;
+            color: $light;
+        }
+    }
+
+    &.lna_btn_dark{
+        background-color: $dark;
+        color: $light;
+
+        &:hover{
+            background-color: $light;
+            color: $dark;
+        }
+    }
+}

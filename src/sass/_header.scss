@@ -1,5 +1,13 @@
 header{
 
+    padding-bottom: 1rem;
+
+    .banner{
+        @include gradient_banner;
+        height: 2rem;
+        line-height: 2rem;
+        
+    }
     .logo_search_cut{
 
         > .row{
@@ -10,15 +18,66 @@ header{
                 width: 100%;
             }
 
-            .input-group{
+            .form-control{
+                border: 0px;
+                padding-top: .5rem;
+                padding-bottom: .5rem;
+                box-shadow: $shadow_main;
+                transition: all 0.15s ease-in-out;
 
-                input::placeholder{
-                    font-family: $main;
-                    font-weight: bold;
-                    font-size: .6rem;
-                    color: #807878;
+                &:focus{
+                    box-shadow: $shadow_hover;
                 }
             }
+
+        }
+
+        .lna_header_icon{
+            padding-right: 1.5rem;
+            
+            div{
+                width: 45px;
+                height: 45px;
+                @include bg_img_parameter;
+                transition: all 0.15s ease-in-out;
+
+                &.lna_account{
+                    background-image: url('../img/icon/header/account.svg');
+                    width: 60px;
+                    height: 60px;
+
+                    &:hover{
+                        background-image: url('../img/icon/header/account_hover.svg');
+                    }
+                }
+                &.lna_shop{
+                    background-image: url('../img/icon/header/shop_empty.svg');
+
+                    &:hover{
+                        background-image: url('../img/icon/header/shop_empty_hover.svg');
+                    }
+                }
+                &.lna_commande{
+                    background-image: url('../img/icon/header/panier.svg');
+
+                    &:hover{
+                        background-image: url('../img/icon/header/panier_hover.svg');
+                    }
+                }
+            }
+            
+        }
+        .lna_header_icon:last-child{
+            padding-right: 0;
+        }
+
+        .lna_btn{
+            background-image: url(../img/icon/header/burger.svg);
+            @include bg_img_parameter;
+            box-shadow: $shadow_btn;
+            width: 55px;
+            height: 40px;
+            margin-right: 12px;
         }
     }
 

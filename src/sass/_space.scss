@@ -1,0 +1,41 @@
+section#space{
+
+    text-align: left;
+
+    .lna_space_flex{
+
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        > div{
+
+            width: 360px;
+            height: 300px;
+            overflow: hidden;
+            .lna_space_img{
+                @include bg_img_parameter;
+                width: 280px;
+                height: 202px;
+                background-image: url(../img/musk_space_part.png);
+            }
+            .lna_space_dog_img{
+                @include bg_img_parameter;
+                width: 165px;
+                height: 175px;
+                background-image: url(../img/musk_dog_part.png);
+                position: absolute;
+                top: 130px;
+                right: -50px;
+                z-index: 1;
+            }
+        }
+
+        article{
+
+            h3{
+                font-size: 1.7rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+section#reinsurance{
+
+    @include gradient_reinsurance;
+
+    .lna_reinsurance_img{
+        width: 55px;
+        height: 55px;
+        @include bg_img_parameter;
+
+        &.lna_reinsurance_livraison{
+            background-image: url(../img/icon/reassurant/livraison.svg);
+        }
+        &.lna_reinsurance_expedition{
+            background-image: url(../img/icon/header/expedition.svg);
+        }
+        &.lna_reinsurance_client{
+            background-image: url(../img/icon/reassurant/service_client.svg);
+        }
+        &.lna_reinsurance_delivery{
+            background-image: url(../img/icon/header/delivery.svg);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+section#mark{
+
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $dark;
+    .lna_container_flex{
+
+        justify-content: center;
+        .lna_card{
+    
+            box-shadow: $shadow_btn;
+            width: 211px;
+            height: 121px;
+        
+            img{
+                object-fit: contain;
+                width: 211px;
+                height: 121px;
+            }
+        }
+    }
+}
