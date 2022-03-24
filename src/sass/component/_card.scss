@@ -1,6 +1,7 @@
 .lna_product_item{
 
-    width: 134px;
+    min-width: 134px;
+    max-width: 134px;
     box-shadow: $shadow_btn;
     display: flex;
     flex-direction: column;

@@ -12,25 +12,26 @@
 
     <header>
 
-        <div class="container-fluid">
+        <div class="banner d-flex justify-content-center text-light">
+            <!-- banniere gauche -->
+            <div class="d-flex justify-content-center lna_banner_position">
+                <div class="d-none d-sm-inline-block lna_banner_img lna_img_truck"><span class="d-none">livraison</span></div>
+                <p>Livraison offerte dès 59€</p>
+            </div>
+            <!-- banniere centre -->
+            <div class="d-flex justify-content-center lna_banner_position">
+                <div class="d-none d-sm-inline-block lna_banner_img lna_img_delivery"><span class="d-none">retour gratuit</span></div>
+                <p>Retour gratuit sous 30 jours</p>
+            </div>
+            <!-- banniere droite -->
+            <div class="d-flex justify-content-center lna_banner_position">
+                <div class="d-none d-sm-inline-block lna_banner_img lna_img_safe"><span class="d-none">paiement sécurisé</span></div>
+                <p>paiement sécurisé</p>
+            </div>
+        </div>
+        <div class="container container-sm">
             <div class="row">
                 <!-- bandeau réassurant -->
-                <div class="col-12 banner">
-                    <div class="d-flex justify-content-around text-light">
-                        <div>
-                            <div class="d-none d-md-inline-block"><span class="d-none">livraison</span></div>
-                            <p>Livraison offerte dès 59€</p>
-                        </div>
-                        <div>
-                            <div class="d-none d-md-inline-block"><span class="d-none">retour gratuit</span></div>
-                            <p>Retour gratuit sous 30 jours</p>
-                        </div>
-                        <div>
-                            <div class="d-none d-md-inline-block"><span class="d-none">paiement sécurisé</span></div>
-                            <p>paiement sécurisé</p>
-                        </div>
-                    </div>
-                </div>
                 <!-- fin bandeau réassurant -->
                 <div class="logo_search_cut col-12">
                     <div class="row">
@@ -113,7 +114,7 @@
 
         <!-- carousel écran large -->
         <section id="carousel_part">
-            <div class="d-none d-md-block">
+            <div class="d-none d-sm-block">
                 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -147,7 +148,7 @@
             </div>
 
             <!-- carousel mobile -->
-            <div class="container-fluid">
+            <div class="container d-sm-none">
                 <div class="card">
                     <div class="card-illustration">
                         <div class="lna_carousel_img img_crocs"></div>
@@ -174,11 +175,11 @@
         <!-- section nouveau produit -->
         <section id="new_order" class="order">
 
+            <div class="container container-sm">
             <h2>Commander à nouveau</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quis doloremque non.</p>
             <div class="lna_separation"></div>
             <!-- carousel des produits -->
-            <div class="container-fluid">
                 <div class="lna_container_flex">
                     <!-- fleche gauche -->
                     <div class="lna_arrow"></div>
@@ -188,7 +189,7 @@
                                 <img src="img/product_item/product_one.png" alt="image d'un produit">
                             </div>
                             <div class="lna_card_body">
-                                <h3>Cage pour petits animaux Gonzales S</h3>
+                                <h3>Cage pour petits animaux Gonzales</h3>
                                 <div class="lna_comment">
                                     <div>
                                         <span class="lna_star lna_star_full"></span>
@@ -209,7 +210,7 @@
                                 <img src="img/product_item/product_two.png" alt="image d'un produit">
                             </div>
                             <div class="lna_card_body">
-                                <h3>Lucky Reptile Bright Sun UV Désert 70 Watts</h3>
+                                <h3>Lucky Reptile Bright Sun UV</h3>
                                 <div class="lna_comment">
                                     <div>
                                         <span class="lna_star lna_star_full"></span>
@@ -225,7 +226,7 @@
                             </div>
                     </div>
                     <!-- troisième produit -->
-                    <div class="lna_product_item d-none">
+                    <div class="lna_product_item d-none d-sm-block">
                             <div class="lna_card_img">
                                 <img src="img/product_item/product_three.png" alt="image d'un produit">
                             </div>
@@ -276,11 +277,11 @@
 
         <section id="best_seller" class="order">
 
+            <div class="container container-sm">
             <h2>Meilleures ventes</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quis doloremque non.</p>
             <div class="lna_separation"></div>
             <!-- carousel des produits -->
-            <div class="container-fluid">
                 <div class="lna_container_flex">
                     <!-- fleche gauche -->
                     <div class="lna_arrow"></div>
@@ -290,7 +291,7 @@
                                 <img src="img/product_item/product_one.png" alt="image d'un produit">
                             </div>
                             <div class="lna_card_body">
-                                <h3>Cage pour petits animaux Gonzales S</h3>
+                                <h3>Cage pour petits animaux Gonzales</h3>
                                 <div class="lna_comment">
                                     <div>
                                         <span class="lna_star lna_star_full"></span>
@@ -306,12 +307,12 @@
                             </div>
                     </div>
                     <!-- deuxième produit -->
-                    <div class="lna_product_item d-none">
+                    <div class="lna_product_item d-none d-sm-block">
                             <div class="lna_card_img">
                                 <img src="img/product_item/product_two.png" alt="image d'un produit">
                             </div>
                             <div class="lna_card_body">
-                                <h3>Lucky Reptile Bright Sun UV Désert 70 Watts</h3>
+                                <h3>Lucky Reptile Bright Sun UV</h3>
                                 <div class="lna_comment">
                                     <div>
                                         <span class="lna_star lna_star_full"></span>
@@ -377,7 +378,7 @@
 
         <section id="reinsurance">
 
-            <div class="container-fluid">
+            <div class="container container-sm">
                 <div class="row">
                     <div class="col-6">
                         <div class="lna_reinsurance_img lna_reinsurance_livraison"></div>
@@ -402,34 +403,34 @@
 
         <section id="mark" class="order">
 
+            <div class="container container-sm">
             <h2>Les marques</h2>
             <p>TOUTES LES MARQUES</p>
             <div class="lna_separation"></div>
             
-            <div class="container-fluid">
                 <div class="lna_container_flex">
                     <div class="lna_card">
                     
                         <img src="img/mark/royal.png" alt="logo de marques">
                     
                     </div>
-                    <div class="lna_card d-none d-md-inline-block">
+                    <div class="lna_card d-sm-none">
                     
                         <img src="img/mark/aquatlantis.png" alt="logo de marques">
                     </div>
-                    <div class="lna_card d-none d-md-inline-block">
+                    <div class="lna_card">
                     
                         <img src="img/mark/bebesaurus.png" alt="logo de marques">
                     </div>
-                    <div class="lna_card d-none d-md-inline-block">
+                    <div class="lna_card d-sm-none">
                     
                         <img src="img/mark/japhy.png" alt="logo de marques">
                     </div>
-                    <div class="lna_card d-none d-md-inline-block">
+                    <div class="lna_card d-sm-none">
                     
                         <img src="img/mark/pedigree.png" alt="logo de marques">
                     </div>
-                    <div class="lna_card d-none d-md-inline-block">
+                    <div class="lna_card d-sm-none">
                     
                         <img src="img/mark/proplan.png" alt="logo de marques">
                     </div>
@@ -439,66 +440,73 @@
         </section>
 
         <section id="space">
-                <div class="lna_space_flex">
-                    <!-- image -->
-                    <div>
+            <div class="lna_space_flex">
+                <!-- image -->
+                <div class="lna_overflow_img d-sm-none">
+                    <!-- image espace -->
+                    <div class="lna_space_img"></div>
+                    <!-- image chien -->
+                    <div class="lna_space_dog_img"></div>
+                </div>
+                <div class="container-sm d-none d-sm-block">
+                    <div class="lna_overflow_img">
                         <!-- image espace -->
                         <div class="lna_space_img"></div>
                         <!-- image chien -->
                         <div class="lna_space_dog_img"></div>
                     </div>
-                    <!-- article sur l'envoye d'animaux dans l'espace -->
-                    <article>
-                        <h3>Grâce à Elon Musk, la Nimes’alerie peut désormais envoyer votre ami à quattre pattes dans l’espace</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit vestibulum orci faucibus egestas morbi dictum quis suscipit. Lectus nunc suspendisse sed erat ut. Maecenas vitae, vel nibh ullamcorper nulla eu. Diam sollicitudin sollicitudin natoque amet mi at ultrices. Erat mauris pellentesque vestibulum a etiam erat. Sit habitant proin magna habitant pharetra, pulvinar faucibus mi sed. Diam viverra lobortis habitasse velit sagittis ac quis massa quam. Sit lectus aliquet porttitor vitae egestas mattis odio egestas elementum. Turpis nulla pharetra dolor tellus duis.</p>
-                    </article>
                 </div>
+                <div class="container container-sm">
+                        <!-- article sur l'envoye d'animaux dans l'espace -->
+                        <div class="lna_overflow_text">
+                            <article>
+                                <h3>Grâce à Elon Musk, la Nimes’alerie peut désormais envoyer votre ami à quattre pattes dans l’espace</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit vestibulum orci faucibus egestas morbi dictum quis suscipit. Lectus nunc suspendisse sed erat ut. Maecenas vitae, vel nibh ullamcorper nulla eu. Diam sollicitudin sollicitudin natoque amet mi at ultrices. Erat mauris pellentesque vestibulum a etiam erat. Sit habitant proin magna habitant pharetra, pulvinar faucibus mi sed. Diam viverra lobortis habitasse velit sagittis ac quis massa quam. Sit lectus aliquet porttitor vitae egestas mattis odio egestas elementum. Turpis nulla pharetra dolor tellus duis.</p>
+                            </article>
+                        </div>
+                </div>
+            </div>
         </section>
 
         <section id="client_opinion" class="order">
 
-            <h2>Ce que nos clients disent</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quis doloremque non.</p>
-            <div class="lna_separation"></div>
+            <div class="container container-sm">
+                <h2>Ce que nos clients disent</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quis doloremque non.</p>
+                <div class="lna_separation"></div>
 
-            <div class="card product_item">
-                
-                <img src="img/opinion/cat.png" alt="photo d'un client">
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita vel eveniet molestias.</p>
-
-                <p><b>NINO</b></p>
-                
-            </div>
-
-            <div class="card product_item">
-                
-                <img src="img/opinion/dog.png" alt="photo d'un client">
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita vel eveniet molestias.</p>
-
-                <p><b>LAIKA</b></p>
-
-            </div>
-
-            <div class="card product_item">
-                
-                <img src="img/opinion/fox.png" alt="photo d'un client">
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita vel eveniet molestias.</p>
-
-                <p><b>FOXY</b></p>
-
-            </div>
-
-            <div class="card product_item">
-                
-                <img src="img/opinion/lezard.png" alt="photo d'un client">
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita vel eveniet molestias.</p>
-
-                <p><b>SAURUS</b></p>
-
+                <div class="lna_container_flex">
+                <!-- carte client -->
+                    <!-- client 1 -->
+                    <div class="lna_product_item product_item">
+                    
+                        <img src="img/opinion/cat.png" alt="photo d'un client">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita vel eveniet molestias.</p>
+                        <p><b>NINO</b></p>
+                    
+                    </div>
+                    <!-- client 2 -->
+                    <div class="lna_product_item product_item">
+                    
+                        <img src="img/opinion/dog.png" alt="photo d'un client">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita vel eveniet molestias.</p>
+                        <p><b>LAIKA</b></p>
+                    </div>
+                    <!-- client 3 -->
+                    <div class="lna_product_item product_item d-sm-none">
+                    
+                        <img src="img/opinion/fox.png" alt="photo d'un client">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita vel eveniet molestias.</p>
+                        <p><b>FOXY</b></p>
+                    </div>
+                    <!-- client 4 -->
+                    <div class="lna_product_item product_item d-sm-none">
+                    
+                        <img src="img/opinion/lezard.png" alt="photo d'un client">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt expedita vel eveniet molestias.</p>
+                        <p><b>SAURUS</b></p>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -507,72 +515,65 @@
 
     <footer>
 
-    <div id="paiement_delivery">
-
-        <div>
-            <img src="img/icon/header/safety_certificate.svg" alt="icone de paiement sécurisé">
-            <p>Paiement sécurisé</p>
-            <img src="img/payment.png" alt="logo des différents moyen de paiement" style="width: 100px;">
+    <div class="container-fluid">
+        <div class="paiement_delivery">
+            <div>
+                <p class="lna_footer_safe">Paiement sécurisé</p>
+                <div class="payment"><span class="d-none">moyen de paiement</span></div>
+            </div>
+            <div>
+                <p class="lna_footer_delivery">Expédition en 48h</p>
+                <div class="chrono"><span class="d-none">livraison chronoposte</span></div>
+                <div class="poste"><span class="d-none">livraison la poste</span></div>
+            </div>
         </div>
-
-        <div>
-            <img src="img/icon/header/expedition.svg" alt="icone d'expédition" style="width: 100px;">
-            <p>Expédition en 48h</p>
-            <img src="img/delivery_chrono.png" alt="logo de chonopost">
-            <img src="img/delivery_poste.png" alt="logo de la poste">
+        <div class="newsletter">
+            <p>Abonnez-vous à notre <b>newletter</b> pour ne rien rater !</p>
+            <form action="" method="get">
+                <div class="input-group">
+                    <div class="form-outline">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="exemple@email.com" maxlength="70"/>
+                        <label class="form-label d-none" for="email">barre de recherche</label>
+                    </div>
+                    <button type="button" class="btn lna_btn_fade">
+                        <img src="img/icon/footer/send.svg" alt="">
+                    </button>
+                </div>
+            </form>
         </div>
-
-        <hr>
-
-    </div>        
-
-    <div id="newsletter">
-
-        <p>Abonnez-vous à notre <b>newletter</b> pour ne rien rater !</p>
-
-        <form action="" method="get">
-            <label for="email">entrez votre adresse mail</label>
-            <input type="email" id="email" name="email" placeholder="exemple@email.com" maxlength="70">
-            <button><img src="img/icon/footer/send.svg" alt=""></button>
-        </form>
+        <div class="row">
+            <div class="footer_link d-sm-flex">
+                <div class="col-sm-4">
+                    <p><b>Nos services</b></p>
+                    <hr>
+                    <a href="#">Aide et FAQ</a>
+                    <a href="#">L'espace service</a>
+                    <a href="#">Mon compte</a>
+                    <a href="#">Mes commandes</a>
+                    <a href="#">Newsletter</a>
+                </div>
+                <div class="col-sm-4">
+                    <p><b>Vos avantages</b></p>
+                    <hr>
+                    <a href="#">Service client</a>
+                    <a href="#">Paiement sécurisé</a>
+                    <a href="#">Régimes VET</a>
+                </div>
+                <div class="col-sm-4">
+                    <p><b>À propos</b></p>
+                    <hr>
+                    <a href="#">La Nîmes'alerie France</a>
+                    <a href="#">Recrutement</a>
+                </div>
+            </div>
+            <div class="social_link">
+                <a href="#" class="social_img in"></a>
+                <a href="#" class="social_img ln"></a>
+                <a href="#" class="social_img fb"></a>
+            </div>
+        </div>
     </div>
-
-    <div id="footer_link">
-
-        <div>
-            <p><b>Nos services</b></p>
-            <hr>
-            <a href="#">Aide et FAQ</a>
-            <a href="#">L'espace service</a>
-            <a href="#">Mon compte</a>
-            <a href="#">Mes commandes</a>
-            <a href="#">Newsletter</a>
-        </div>
-
-        <div>
-            <p><b>Vos avantages</b></p>
-            <hr>
-            <a href="#">Service client</a>
-            <a href="#">Paiement sécurisé</a>
-            <a href="#">Régimes VET</a>
-        </div>
-
-        <div>
-            <p><b>À propos de la Nîmes'alerie</b></p>
-            <hr>
-            <a href="#">La Nîmes'alerie France</a>
-            <a href="#">Recrutement</a>
-        </div>
-
-        <div id="social_link">
-            <img src="img/icon/footer/instagram.svg" alt="icone instagram">
-            <img src="img/icon/footer/linkedin.svg" alt="icone linkedin">
-            <img src="img/icon/footer/facebook.svg" alt="icone facebook">
-        </div>
-
-    </div>
-
-    <div class="banner"></div>
+        <div class="banner"></div>
 
     </footer>
     

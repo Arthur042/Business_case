@@ -1,0 +1,31 @@
+form{
+
+    .input-group{
+
+        input.form-control{
+            padding: .6rem 1rem;
+            box-shadow: $shadow_main;
+            transition: all 0.15s ease-in-out;
+            border-radius: 0.25rem 0 0 0.25rem;
+
+            &:focus{
+                box-shadow: $shadow_hover;
+            }
+        }
+
+        .btn{
+            width: 45.19px;
+            padding: 0;
+            box-shadow: 1px 1px 4px rgb(0 0 0 / 20%);
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .lna_btn_fade{
+            @include gradient_reinsurance;
+        }
+        
+    }
+}
