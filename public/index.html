@@ -11,7 +11,7 @@
 <body>
 
     <header>
-
+        <!-- banniere -->
         <div class="banner d-flex justify-content-center text-light">
             <!-- banniere gauche -->
             <div class="d-flex justify-content-center lna_banner_position">
@@ -29,60 +29,62 @@
                 <p>paiement sécurisé</p>
             </div>
         </div>
-        <div class="container container-sm">
+        <div class="container">
             <div class="row">
                 <!-- bandeau réassurant -->
                 <!-- fin bandeau réassurant -->
                 <div class="logo_search_cut col-12">
                     <div class="row">
                         <!-- logo -->
-                        <div class="col-3 lna_logo p-0 ps-2 mb-3 mt-2">
+                        <div class="col-3 col-md-2 lna_logo p-0 ps-2 mb-3 mt-2">
                             <h1 class="d-none">La Nîmes'alerie</h1>
                             <img src="img/header/animalerieLogo.png" alt="logo de la nîmes'alerie">
                         </div>
                          <!-- fin logo -->
                         <!-- barre de recherche -->
-                        <form action="" method="get" class="col-9 ps-5 mb-3 mt-2">
+                        <form action="" method="get" class="col-9 col-md-5 ps-5 mb-3 mt-2">
                                     <div class="input-group d-inline-block d-md-flex">
                                         <div class="form-outline">
                                             <input type="search" id="search" class="form-control" placeholder="Recherche ( nom du produit, marque )"/>
                                             <label class="form-label d-none" for="search">barre de recherche</label>
                                         </div>
-                                        <button type="button" class="btn lna_btn_fade d-none">
-                                            mettre une image
+                                        <button type="button" class="btn lna_btn_fade d-none d-md-block">
                                         </button>
                                     </div>
                          </form>
                         <!-- fin barre de recherche -->
 
                         <!-- icone + menu burger -->
-                        <div class="col-7 mt-1">
+                        <div class="col-7 col-md-4 mt-1">
                             <div class="d-flex align-items-center">
+                                <!-- icone account -->
                                 <div class="lna_header_icon">
                                     <div class="lna_account">
                                         <span class="d-none">icone de compte</span>
                                     </div>
-                                    <p class="d-none">Connectez-vous</p>
+                                    <p class="d-none d-md-block">Connectez-vous</p>
                                 </div>
+                                <!-- icone panier -->
                                 <div class="lna_header_icon">
                                     <div class="lna_shop">
                                         <span class="d-none">icone de panier</span>
                                     </div>
-                                    <p class="d-none">Panier</p>
+                                    <p class="d-none d-md-block">Panier</p>
                                 </div>
+                                <!-- icone commande -->
                                 <div class="lna_header_icon">
                                     <div class="lna_commande"><span class="d-none">icone de commande</span></div>
-                                    <p class="d-none">Mes commandes</p>
+                                    <p class="d-none d-md-block">Mes commandes</p>
                                 </div>
                             </div>      
                         </div>
-                        <button class="btn lna_btn col-2 offset-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="d-none">menu de navigation</span></button>
+                        <button class="btn lna_btn col-2 offset-2 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="d-none">menu de navigation</span></button>
                         <!-- fin icone + menu burger -->
                     </div>
                 </div>
                 
                 <!-- navbar -->
-                <nav class="d-none">
+                <nav class="d-none d-md-block">
                     <ul>
                         <li><a href="#"><img src="img/icon/header/dog.svg" alt="icone de chien"> Chien</a></li>
                         <li><a href="#"><img src="img/icon/header/cat.svg" alt="icone de chat"> Chat</a></li>

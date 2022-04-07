@@ -64,6 +64,12 @@ header{
                 }
             }
 
+            button{
+                @include bg_img_parameter;
+                background-image: url(../img/icon/header/search_white.svg);
+                width: 30px;
+                height: 30px;
+            }
         }
 
         .lna_header_icon{
@@ -97,6 +103,13 @@ header{
                     &:hover{
                         background-image: url('../img/icon/header/panier_hover.svg');
                     }
+                }
+            }
+            
+            @media screen and (min-width:768px) {
+                p{
+                    font-size: .7rem ;
+                    font-weight: bold ;
                 }
             }
             
