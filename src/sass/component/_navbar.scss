@@ -1,0 +1,32 @@
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+
+        a{
+            display: flex;
+            align-items: center;
+
+            &:visited{
+                color: inherit;
+            }
+
+            &:hover{
+                background: linear-gradient(45deg, rgba(5,117,230) 0%, rgba(0,242,96) 80%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        img{
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+    }
+}

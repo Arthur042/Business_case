@@ -64,12 +64,19 @@ header{
                 }
             }
 
-            button{
-                @include bg_img_parameter;
-                background-image: url(../img/icon/header/search_white.svg);
-                width: 30px;
-                height: 30px;
+            @media screen and (min-width: 768px) {
+                .lna_search_logo{
+                    @include bg_img_parameter;
+                    background-image: url(../img/icon/header/search_white.svg);
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
+            
         }
 
         .lna_header_icon{
