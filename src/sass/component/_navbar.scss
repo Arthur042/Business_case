@@ -11,15 +11,14 @@ header nav ul{
         a{
             display: flex;
             align-items: center;
+            color: $dark;
 
             &:visited{
                 color: inherit;
             }
 
             &:hover{
-                background: linear-gradient(45deg, rgba(5,117,230) 0%, rgba(0,242,96) 80%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                @include text_fade;
             }
         }
 

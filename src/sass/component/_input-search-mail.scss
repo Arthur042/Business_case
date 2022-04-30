@@ -24,7 +24,12 @@ form{
         }
 
         .lna_btn_fade{
-            @include gradient_reinsurance;
+            @include gradient_btn;
+            transition: all 0.25s ease-in-out;
+
+            &:hover{
+                @include gradient_btn_hover;
+            }
         }
         
     }

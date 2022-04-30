@@ -31,4 +31,40 @@
             color: $dark;
         }
     }
+
+    &.lna_btn_carousel_dark{
+        background-color: $dark;
+        color: $light;
+        padding: .4rem 1rem;
+        font-size: .6rem;
+
+        @media screen and (min-width: 768px) {
+            padding: .5rem 2rem;
+            font-size: .8rem;
+        }
+
+        &:hover{
+            background-color: $light;
+            color: $dark;
+        }
+    }
+
+
+    &.lna_btn_carousel_fade{
+        border: solid 1px $light;
+        box-shadow: none;
+        padding: .4rem 1rem;
+        font-size: .6rem;
+
+        @media screen and (min-width: 768px) {
+            padding: .5rem 2rem;
+            font-size: .8rem;
+        }
+        
+        &:hover{
+            background-color: $light;
+            color: $dark;
+            box-shadow: $shadow_main;
+        }
+    }
 }
