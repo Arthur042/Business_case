@@ -2,6 +2,14 @@ section#space{
 
     text-align: left;
 
+    @media screen and (min-width:992px){            
+        margin-bottom: 7rem;
+    }
+
+    @media screen and (min-width:1200px){            
+        margin-bottom: 9rem;
+    }
+
     .lna_space_flex{
 
         display: flex;
@@ -53,11 +61,17 @@ section#space{
                 }
 
                 @media screen and (min-width:992px){
-                    width: 530px;
-                    height: 408px;
+                    width: 600px;
+                    height: 478px;
                     position: absolute;
                     margin-left: 0;
                     left: -110px;
+                }
+
+                @media screen and (min-width:1200px){
+                    width: 700px;
+                    height: 578px;
+                    left: -130px;
                 }
             }
             .lna_space_dog_img{
@@ -80,14 +94,28 @@ section#space{
                     width: 215px;
                     height: 225px;
                     right: -470px;
-                    bottom: 70px;
+                    bottom: 100px;
                 }
 
                 @media screen and (min-width:992px){
-                    width: 275px;
-                    height: 285px;
-                    bottom: -340px;
-                    left: 50px;
+                    width: 305px;
+                    height: 315px;
+                    bottom: -360px;
+                    left: 70px;
+                }
+
+                @media screen and (min-width:1200px){
+                    width: 355px;
+                    height: 365px;
+                    bottom: -350px;
+                    left: 90px;
+                }
+
+                @media screen and (min-width:1400px){
+                    width: 435px;
+                    height: 445px;
+                    bottom: -270px;
+                    left: 90px;
                 }
 
             }
@@ -118,16 +146,27 @@ section#space{
                 
                 @media screen and (min-width:575px){
 
-                    top: -80px;
+                    top: -70px;
                 }
 
                 h3{
                     font-size: 1.7rem;
                     margin-bottom: 1.5rem;
+                    font-family: $main;
 
                     @media screen and (min-width:575px){
                     
                         width: 390px;
+                    }
+
+                    @media screen and (min-width:768px){
+                    
+                        width: 440px;
+                    }
+
+                    @media screen and (min-width:992px){
+                    
+                        width: 100%;
                     }
                 }
     

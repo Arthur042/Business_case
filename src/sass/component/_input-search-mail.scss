@@ -1,12 +1,13 @@
 form{
 
     .input-group{
+        position: relative;
 
         input.form-control{
             padding: .6rem 1rem;
             box-shadow: $shadow_main;
             transition: all 0.15s ease-in-out;
-            border-radius: 0.25rem 0 0 0.25rem;
+            border-radius: 0.25rem;
 
             &:focus{
                 box-shadow: $shadow_hover;
@@ -14,9 +15,13 @@ form{
         }
 
         .btn{
-            width: 45.19px;
+            width: 43.19px;
+            height: 40px;
             padding: 0;
-            box-shadow: 1px 1px 4px rgb(0 0 0 / 20%);
+            position: absolute;
+            right: 0;
+            top: 0;
+
 
             img{
                 width: 100%;

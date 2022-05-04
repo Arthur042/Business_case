@@ -40,6 +40,7 @@ header{
     }
     .logo_search_cut{
 
+        margin-bottom: .5rem;
         .ps-5{
             padding-left: 1rem !important;
         }
@@ -50,6 +51,7 @@ header{
 
             img{
                 width: 100%;
+                max-width: 182px;
             }
 
             .form-control{
@@ -80,7 +82,8 @@ header{
         }
 
         .lna_header_icon{
-            padding-right: 1.5rem;
+            padding-right: 1.2rem;
+            position: relative;
             
             div{
                 width: 45px;
@@ -117,10 +120,39 @@ header{
                 p{
                     font-size: .7rem ;
                     font-weight: bold ;
+                    margin: 0;
+                    position: absolute;
+                    bottom: -15px;
+                    left: 7px;
+
+                    
                 }
             }
+
             
         }
+
+        @media screen and (min-width:768px) {
+            div.lna_header_icon:first-child{
+                padding-right: 2rem;
+                p{
+                    bottom: -8px;
+                    left: -12px;
+                }
+            }
+
+            div.lna_header_icon:last-child{
+                width: 90px;
+                p{
+                    bottom: -15px;
+                    left: 2px;
+                }
+            }
+        }
+
+
+
+
         .lna_header_icon:last-child{
             padding-right: 0;
         }

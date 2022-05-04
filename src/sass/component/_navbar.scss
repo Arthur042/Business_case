@@ -5,9 +5,13 @@ header nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    @media screen and (min-width:992px) {
+        justify-content: space-evenly;
+    }
     
     li {
-
+        
         a{
             display: flex;
             align-items: center;
@@ -26,6 +30,25 @@ header nav ul{
             width: 30px;
             height: 30px;
             margin-right: 5px;
+        }
+
+        @media screen and (min-width:1200px) {
+        
+            display: flex;
+            align-items: center;
+
+            &::after{
+                content: '';
+                border-right: 1px solid $dark;
+                padding-left: 2rem;
+                height: 1.5rem;
+            }
+
+            &:last-child{
+                &::after{
+                    content: none;
+                } 
+            }
         }
     }
 }
