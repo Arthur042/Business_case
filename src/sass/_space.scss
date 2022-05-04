@@ -21,6 +21,11 @@ section#space{
                 overflow: visible;
                 height: 350px;
             }
+
+            @media screen and (min-width:768px){
+                height: 410px;
+            }
+
             .lna_space_img{
                 @include bg_img_parameter;
                 background-size: cover;
@@ -33,6 +38,11 @@ section#space{
                     height: 260px;
                     margin-left: 50%;
                     transform: translateX(-60%);
+                }
+
+                @media screen and (min-width:768px){
+                    width: 440px;
+                    height: 318px;
                 }
             }
             .lna_space_dog_img{
@@ -49,6 +59,13 @@ section#space{
                     position: relative;
                     right: -370px;
                     bottom: 100px;
+                }
+
+                @media screen and (min-width:768px){
+                    width: 215px;
+                    height: 225px;
+                    right: -470px;
+                    bottom: 70px;
                 }
 
             }
