@@ -1,0 +1,27 @@
+.offcanvas{
+    @include gradient_offCanva;
+    color: $light;
+    .offcanvas-header{
+        justify-content: end !important;
+
+        button{
+            @include bg_img_parameter;
+            width: 30px;
+            height: 30px;
+            background-image: url('../img/icon/offCanva/cross.png');
+        }
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        li{
+            width: 150px;
+            display: flex;
+            justify-content: start;
+        }
+    }
+}

@@ -9,6 +9,11 @@
     background: linear-gradient(45deg, rgba(5,117,230,.5) 0%, rgba(0,242,96,.5) 80%);
 }
 
+@mixin gradient_offCanva {
+    background: rgb(5,117,230);
+    background: linear-gradient(45deg, rgba(5,117,230) 0%, rgba(0,242,96) 80%);
+}
+
 @mixin gradient_btn {
     background: rgb(5,117,230);
     background: linear-gradient(135deg, rgba(5,117,230) -50%, rgba(0,242,96) 80%);

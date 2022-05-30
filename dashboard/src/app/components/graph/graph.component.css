@@ -1,0 +1,8 @@
+mat-toolbar{
+    display: flex;
+    align-items: center;
+}
+p{
+    margin-bottom: 5px;
+    margin-right: 1rem;
+}
