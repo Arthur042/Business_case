@@ -1,4 +1,4 @@
-.offcanvas{
+.offcanvasMobileNavBar {
     @include gradient_offCanva;
     color: $light;
     .offcanvas-header{
@@ -98,8 +98,8 @@
             }
 
             .offcanvasDog .targetDogDisplay div{
-                top: 8px;
-                left: 20px;
+                top: 9px;
+                left: 18px;
             }
 
             .offcanvasCat .targetDogDisplay div{
