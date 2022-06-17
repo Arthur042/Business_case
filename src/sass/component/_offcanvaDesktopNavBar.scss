@@ -1,97 +1,81 @@
-.offcanvas-start{
-    width: 800px;
+.displayOffcanva{
+    position: relative;
 
-    @media screen and (max-width:1400px){
-        width: 700px;
-    }
-    @media screen and (max-width:1200px){
-        width: 500px;
-    }
+    .dofOffcanvaBg, .catOffcanvaBg, .ratOffcanvaBg, .fishOffcanvaBg, .birdOffcanvaBg, .snakeOffcanvaBg{
+        position: absolute;
+        top: -700px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1920px;
+        width: 100%;
+        z-index: 4;
+        transition: ease-in-out .4s;
 
-    @media screen and (max-width:992px){
-        width: 300px;
-    }
-
-    a{
-        color: $dark;
-    }
-
-    .desktopOffcanva-body{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-
-        @media screen and (max-width:992px){
-            display: block;
+        &:hover{
+            top: -57px;
         }
-
-        .rightOffcanva, .leftOffcanva{
-            padding: 1rem;
+    
+        #offcanvasDesktopDog, #offcanvasDesktopCat, #offcanvasDesktopRat, #offcanvasDesktopFish, #offcanvasDesktopBird, #offcanvasDesktopSnake{
+            background-color: $light;
             width: 50%;
-            height: 100%;
-            @media screen and (max-width:992px){
-                width: 100%;
-            }
         }
-        .leftOffcanva{
-            border-right: 3px solid #e6e6e6;
-
-            h3{
-                font-size: 2rem;
-                margin-bottom: 2rem;
+    }
+    
+    .myOffcanva{
+        width: 800px;
+        height: 630px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    
+        .desktopOffcanva-body{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+    
+            .rightOffcanva, .leftOffcanva{
+                padding: 1rem;
+                width: 100%;
+                height: 100%;
             }
-
-            p{
-                margin-bottom: 2rem;
-                @media screen and (max-width:1200px){
-                    font-size: .8rem;
+            .leftOffcanva{
+                border-right: 3px solid #e6e6e6;
+    
+                h3{
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+                }
+    
+                p{
+                    margin-bottom: 2rem;
                 }
             }
-            
-            img {
-                width: 100%;
-            }
-        }
-
-        .rightOffcanva{
-
-            ul{
-                margin-top: 4.8rem;
-                list-style: none;
-
-                @media screen and (max-width:992px){
-                    margin-top: 1rem;
-                    padding: 0;
-                }
-
-                li{
-                    margin-bottom: 1rem;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    a{
-                        font-size: 1rem;
-                        text-decoration: none;
-                        text-transform: uppercase;
-
-                        &:hover{
-                            @include text_fade;
+    
+            .rightOffcanva{
+    
+                ul{
+                    margin-top: 4.8rem;
+                    list-style: none;
+    
+                    li{
+                        margin-bottom: 1rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        a{
+                            font-size: 1rem;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: $dark;
+    
+                            &:hover{
+                                @include text_fade;
+                            }
                         }
-
-                        @media screen and (max-width:1200px){
-                            font-size: .8rem;
+                        span {
+                            @include bg_img_parameter;
+                            width: 8px;
+                            height: 14px;
+                            background-image: url(../img/icon/fleche.svg);
                         }
-
-                        @media screen and (max-width:992px){
-                            font-size: .7rem;
-                        }
-                        
-                    }
-                    span {
-                        @include bg_img_parameter;
-                        width: 8px;
-                        height: 14px;
-                        background-image: url(../img/icon/fleche.svg);
                     }
                 }
             }
