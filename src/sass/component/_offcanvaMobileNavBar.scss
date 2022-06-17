@@ -1,6 +1,9 @@
 .offcanvasMobileNavBar {
     @include gradient_offCanva;
     color: $light;
+    a{
+        color: $light;
+    }
     .offcanvas-header{
         justify-content: end !important;
 

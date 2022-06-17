@@ -1,6 +1,10 @@
 footer{
     background-color: $footer;
 
+    a{
+        color: $dark;
+    }
+
     .paiement_delivery{
 
         padding-bottom: 1rem;
