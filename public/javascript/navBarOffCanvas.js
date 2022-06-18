@@ -25,7 +25,6 @@
 function toggleOffCanva(offcanva) {
 
     let isOffcanvaOpen = document.querySelector('.offcanvaIsActived');
-    console.log(isOffcanvaOpen);
     
     if (offcanva.classList.contains('offcanvaIsActived')) {
         offcanva.classList.remove('offcanvaIsActived');
@@ -49,8 +48,10 @@ function toggleOffCanva(offcanva) {
  */
 function closeModal() {
     let offcanvaToClose = document.querySelector('.offcanvaIsActived');
+    if (offcanvaToClose) {
         offcanvaToClose.classList.remove('offcanvaIsActived');
         offcanvaToClose.style.top = '-700px';
+    }
   }
 
 

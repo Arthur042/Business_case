@@ -1,5 +1,6 @@
-#connectionModal, #inscriptionModal{
 
+#connectionModal, #inscriptionModal{
+    background-color: rgba(0, 0, 0, 0.432);
     .modal-body{
         .btn-close{
             position: absolute;
@@ -50,4 +51,14 @@
             }
         }
     }
+}
+
+
+#inscriptionModal > div > div > div > form > div:nth-child(2){
+    margin-bottom: 24px !important;
+}
+
+
+body > div{
+    display: none;
 }

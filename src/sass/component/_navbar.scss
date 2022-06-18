@@ -37,18 +37,6 @@ header nav ul{
             display: flex;
             align-items: center;
 
-            &::after{
-                content: '';
-                border-right: 1px solid $dark;
-                padding-left: 2rem;
-                height: 1.5rem;
-            }
-
-            &:last-child{
-                &::after{
-                    content: none;
-                } 
-            }
         }
     }
 }
