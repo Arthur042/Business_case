@@ -1,6 +1,7 @@
 section#space{
 
     text-align: left;
+    margin-bottom: 6rem;
 
     @media screen and (min-width:992px){            
         margin-bottom: 7rem;
@@ -80,7 +81,7 @@ section#space{
                 height: 175px;
                 background-image: url(../img/musk_dog_part.png);
                 position: absolute;
-                right: -40px;
+                right: -60px;
                 bottom: 0px;
                 z-index: -1;
 
@@ -173,6 +174,7 @@ section#space{
                 p{
                     line-height: 1.3rem;
                     margin: 0;
+                    margin-right: 1rem;
                 }
             }
         }

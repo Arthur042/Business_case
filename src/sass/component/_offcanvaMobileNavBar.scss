@@ -1,6 +1,7 @@
 .offcanvasMobileNavBar {
     @include gradient_offCanva;
     color: $light;
+    width: 100%;
     a{
         color: $light;
     }
