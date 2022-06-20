@@ -21,21 +21,36 @@
             margin: auto;
             margin-bottom: 1rem;
 
-            .input-group, form-group{
+            .passwordInput, form-group{
                 margin-bottom: 2rem;
             }
 
-            #togglePassword{
-                cursor: pointer;
-                @include bg_img_parameter;
-                width: 40px;
-                background-size: 25px;
+            .passwordInput{
+                position: relative;
 
-                &.see{
-                    background-image: url('../img/icon/connection/view.png');
+                input{
+                    padding-right: 3rem;
                 }
-                &.hide{
-                    background-image: url('../img/icon/connection/hidden.png');
+
+                #togglePassword{
+                    cursor: pointer;
+                    @include bg_img_parameter;
+                    width: 40px;
+                    height: 40px;
+                    background-size: 25px;
+                    position: absolute;
+                        top: 0;
+                        right: .2rem;
+                        font-size: 1.5rem;
+                        background-color: rgba(255, 255, 255, 0);
+                        border: 0;
+    
+                    &.see{
+                        background-image: url('../img/icon/connection/view.png');
+                    }
+                    &.hide{
+                        background-image: url('../img/icon/connection/hidden.png');
+                    }
                 }
             }
         }

@@ -39,11 +39,11 @@ function toggleCanvas(canvas) {
     let offcanvasActivated = document.querySelector('.isActivated'); // je récupère le offcanvas actif
 
     if (offcanvasActivated === canvastoToggle) { // si le offcanvas à ouvrir est le même que celui actif, on ferme le offcanvas
-        canvastoToggle.style.right = '-250px';
+        canvastoToggle.style.right = '-400px';
         canvastoToggle.classList.remove('isActivated');
     } else if (offcanvasActivated) { // si un offcanvas est actif, on ferme le offcanvas actif
         offcanvasActivated.classList.remove('isActivated');
-        offcanvasActivated.style.right = '-250px';
+        offcanvasActivated.style.right = '-400px';
         if (canvastoToggle) { // si on a fermé un offcanva et qu'on a cliqué sur un autre, on ouvre le nouveau
             canvastoToggle.style.right = '0';
             canvastoToggle.classList.add('isActivated');
@@ -63,7 +63,7 @@ function closeMobileSecondOffcanvas() {
     let offcanvaToClose = document.querySelector('.isActivated');
     if (offcanvaToClose) {
         offcanvaToClose.classList.remove('isActivated');
-        offcanvaToClose.style.right = '-250px';
+        offcanvaToClose.style.right = '-400px';
     }
 }
 
@@ -81,7 +81,7 @@ closeOffcanvas.addEventListener('click', function () {
     let offcanvasActivated = document.querySelector('.isActivated');
     if (offcanvasActivated) {
         offcanvasActivated.classList.remove('isActivated');
-        offcanvasActivated.style.right = '-250px';
+        offcanvasActivated.style.right = '-400px';
     }
 });
 
