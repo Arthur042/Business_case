@@ -77,4 +77,17 @@
             box-shadow: $shadow_main;
         }
     }
+
+    &.lna_btn_fade_color{
+        @include gradient_btn;
+        border: none;
+        box-shadow: $shadow_btn;
+        color: $light;
+        font-family: $main !important;
+        font-weight: bold;
+
+        &:hover{
+            @include gradient_btn_hover;
+        }
+    }
 }

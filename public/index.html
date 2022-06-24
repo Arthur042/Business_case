@@ -57,7 +57,7 @@
 
                         <!-- icone + menu burger -->
                         <div class="col-7 col-md-4 mt-1">
-                            <div class="d-flex align-items-center">
+                            <div class="lna_displayHeaderIcon">
                                 <!-- icone account -->
                                     <div class="lna_header_icon" data-bs-toggle="modal" data-bs-target="#connectionModal">
                                         <div class="lna_account">
@@ -127,16 +127,66 @@
                                     </div>
 
                                 <!-- icone panier -->
-                                <div class="lna_header_icon">
-                                    <div class="lna_shop">
-                                        <span class="d-none">icone de panier</span>
+                                    <div class="lna_header_icon shop">
+                                        <div class="lna_shop">
+                                            <span class="d-none">icone de panier</span>
+                                        </div>
+                                        <p class="d-none d-lg-block">Panier</p>
+
+                                        <!-- modal de panier -->
+                                            <div class="myModal d-none">
+                                                <div class="myModalBody">
+                                                    <!-- composant item panier --------------------------------------------------------------------------------------------->
+                                                        <div class="myModalItem">
+                                                            <img src="img/product_item/product_one.png" alt="image miniature du produit" class="myModalPanierImg">
+                                                            <div class="myModalResumeProduct">
+                                                                <div class="myModalTopResume">
+                                                                    <p>Pet Partner</p> <!-- marque du produit-->
+                                                                    <p>Pet products Cage pour petits animaux Gonzales S </p> <!-- nom du produit-->
+                                                                </div>
+                                                                <div class="myModalBottomResume">
+                                                                    <p class="myModalQuantity"> quantité : 1</p>
+                                                                    <p class="myModalPriceProduct">59,99 €</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="myModalDeleteProduct"></div>
+                                                        </div>
+                                                    <!-- composant item panier --------------------------------------------------------------------------------------------->
+                                                        <div class="myModalItem">
+                                                            <img src="img/product_item/product_two.png" alt="image miniature du produit" class="myModalPanierImg">
+                                                            <div class="myModalResumeProduct">
+                                                                <div class="myModalTopResume">
+                                                                    <p>Pet Partner</p> <!-- marque du produit-->
+                                                                    <p>Pet products Cage pour petits animaux Gonzales S </p> <!-- nom du produit-->
+                                                                </div>
+                                                                <div class="myModalBottomResume">
+                                                                    <p class="myModalQuantity"> quantité : 2</p>
+                                                                    <p class="myModalPriceProduct">66,98 €</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="myModalDeleteProduct"></div>
+                                                        </div>
+                                                    <div class="myModalPrice">
+                                                        <div class="myModalDelivery">
+                                                            <p>Livraison : </p>
+                                                            <p>Offerte</p>
+                                                        </div>
+                                                        <div class="myModalTotalPrice">
+                                                            <p>Montant Total : </p>
+                                                            <p>126,97 €</p>
+                                                        </div>
+                                                    </div>
+    
+                                                    <button class="lna_btn_main lna_btn_fade_color">Accéder au panier</button>
+                                                </div>
+                                            </div>
                                     </div>
-                                    <p class="d-none d-lg-block">Panier</p>
-                                </div>
+
+
                                 <!-- icone commande -->
                                 <div class="lna_header_icon">
                                     <div class="lna_commande"><span class="d-none">icone de commande</span></div>
-                                    <p class="d-none d-lg-block">Mes commandes</p>
+                                    <p class="d-none d-lg-block">Commandes</p>
                                 </div>
                             </div>      
                         </div>
@@ -148,12 +198,12 @@
                 <!-- navbar -->
                 <nav class="d-none d-md-block">
                     <ul>
-                        <li><a data-bs-toggle="offcanvas" role="button" href="#" id="buttonToggleDog"><img src="img/icon/header/dog.svg" alt="icone de chien"> Chien</a></li>
-                        <li><a data-bs-toggle="offcanvas" role="button" href="#" id="buttonToggleCat"><img src="img/icon/header/cat.svg" alt="icone de chat"> Chat</a></li>
-                        <li><a data-bs-toggle="offcanvas" role="button" href="#" id="buttonToggleRat"><img src="img/icon/header/rabbit.svg" alt="icone de Rongeur"> Rongeur</a></li>
-                        <li><a data-bs-toggle="offcanvas" role="button" href="#" id="buttonToggleFish"><img src="img/icon/header/fish.svg" alt="icone de poisson"> Aqua</a></li>
-                        <li><a data-bs-toggle="offcanvas" role="button" href="#" id="buttonToggleSnake"><img src="img/icon/header/turtle.svg" alt="icone de reptile"> Terrario</a></li>
-                        <li><a data-bs-toggle="offcanvas" role="button" href="#" id="buttonToggleBird"><img src="img/icon/header/bird.svg" alt="icone d'oiseau"> Oiseau</a></li>
+                        <li class="opened"><a data-bs-toggle="offcanvas" role="button" href="#" id="buttonToggleDog"><img src="img/icon/header/dog.svg" alt="icone de chien"> Chien</a></li>
+                        <li class="opened"><a data-bs-toggle="offcanvas" role="button" href="#" id="buttonToggleCat"><img src="img/icon/header/cat.svg" alt="icone de chat"> Chat</a></li>
+                        <li class="opened"><a data-bs-toggle="offcanvas" role="button" href="#" id="buttonToggleRat"><img src="img/icon/header/rabbit.svg" alt="icone de Rongeur"> Rongeur</a></li>
+                        <li class="opened"><a data-bs-toggle="offcanvas" role="button" href="#" id="buttonToggleFish"><img src="img/icon/header/fish.svg" alt="icone de poisson"> Aqua</a></li>
+                        <li class="opened"><a data-bs-toggle="offcanvas" role="button" href="#" id="buttonToggleSnake"><img src="img/icon/header/turtle.svg" alt="icone de reptile"> Terrario</a></li>
+                        <li class="opened"><a data-bs-toggle="offcanvas" role="button" href="#" id="buttonToggleBird"><img src="img/icon/header/bird.svg" alt="icone d'oiseau"> Oiseau</a></li>
                         <li><a href="#"><img src="img/icon/header/rocket.svg" alt="icone de fusée"> <span class="d-none d-lg-block">votre animal dans l</span> <span class="d-lg-none">L</span> 'espace</a></li>
                     </ul>
                 </nav>
@@ -963,7 +1013,7 @@
                             <!-- article sur l'envoye d'animaux dans l'espace -->
                             <div class="lna_overflow_text">
                                 <article>
-                                    <h3>Grâce à Elon Musk, la Nimes’alerie peut désormais envoyer votre ami à quattre pattes dans l’espace</h3>
+                                    <h3>Grâce à Elon Musk, la Nimes’alerie peut désormais envoyer votre ami à quatre pattes dans l’espace</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit vestibulum orci faucibus egestas morbi dictum quis suscipit. Lectus nunc suspendisse sed erat ut. Maecenas vitae, vel nibh ullamcorper nulla eu. Diam sollicitudin sollicitudin natoque amet mi at ultrices. Erat mauris pellentesque vestibulum a etiam erat. Sit habitant proin magna habitant pharetra, pulvinar faucibus mi sed. Diam viverra lobortis habitasse velit sagittis ac quis massa quam. Sit lectus aliquet porttitor vitae egestas mattis odio egestas elementum. Turpis nulla pharetra dolor tellus duis.</p>
                                 </article>
                             </div>
@@ -1095,5 +1145,6 @@
     <script src="./javascript/offcanvas.js"></script>
     <script src="./javascript/showPassword.js"></script>
     <script src="./javascript/navBarOffCanvas.js"></script>
+    <script src="./javascript/panierToggle.js"></script>
 </body>
 </html>

@@ -9,9 +9,11 @@ header nav ul{
     @media screen and (min-width:992px) {
         justify-content: space-evenly;
     }
+
+    
     
     li {
-        
+        padding-right: 1rem;
         a{
             display: flex;
             align-items: center;
