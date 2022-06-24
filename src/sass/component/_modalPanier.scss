@@ -10,6 +10,22 @@
     padding: 1.5rem;
     cursor: auto !important;
 
+    @media screen and (max-width:1200px) {
+        right: -110px;
+    }
+
+    @media screen and (max-width:992px) {
+        top: 65px;
+        right: -65px;
+        width: 338px !important;
+    }
+    @media screen and (max-width:768px) {
+        right: -210px;
+    }
+    @media screen and (max-width:576px) {
+        right: -204px;
+    }
+
     .myModalBody{
 
         .myModalItem{
