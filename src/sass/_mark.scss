@@ -12,15 +12,19 @@ section#mark{
         @media screen and (min-width: 540px) {
             overflow: visible;
         }
-
+        
         .lna_card{
-    
+            
             box-shadow: $shadow_btn;
             width: 211px;
             height: 121px;
             margin-right: .5rem;
             margin-left: .5rem;
-        
+            
+            @media screen and (min-width: 1400px) {
+                margin: 0;
+            }
+
             img{
                 object-fit: contain;
                 width: 211px;
