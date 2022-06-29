@@ -49,18 +49,32 @@
                                 <div class="lna_account">
                                     <span class="d-none">icone de compte</span>
                                 </div>
-                                <p class="d-none d-lg-block">Connectez-vous</p>
+                                <p class="d-none d-lg-block">
+                                    <?php
+                                    if (isset($_SESSION['isConnected'])) {
+                                        echo "Mon compte";
+                                    } else {
+                                        echo "Connectez-vous";
+                                    }
+                                    ?>
+                                </p>
+                            <?php
+                            // Si l'utilisateur est connecté et que la sessionest ouverte
+                            if (isset($_SESSION['isConnected'])) {
+                                include_once 'component/header/modal/gestionCompte.php';
+                            } elseif (!empty($_COOKIE['session'])){
+                                $_SESSION['isConnected'] = true;
+                                $_SESSION['name']= $_COOKIE['name'];
+                                header('Location: index.php');
+                            } else{
+                                // import du snippet de connexion ---------------------------------------------------------------------
+                                    include_once 'component/header/modal/connection.php';
+                                // import du snippet d'inscription ---------------------------------------------------------------------
+                                    include_once 'component/header/modal/inscription.php';
+                            }
+                            ?>
                             </div>
 
-                            <!-- modal de connexion -->
-                            
-                            <!-- modal d'inscription -->
-                            <?php
-                            // import du snippet de connexion ---------------------------------------------------------------------
-                                include_once 'component/header/modal/connection.php';
-                            // import du snippet d'inscription ---------------------------------------------------------------------
-                                include_once 'component/header/modal/inscription.php';
-                            ?>
 
                             <!-- icone panier -->
                             <div class="lna_header_icon shop">
