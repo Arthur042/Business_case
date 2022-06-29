@@ -62,17 +62,32 @@ header{
                 max-width: 182px;
             }
 
-            .form-control{
-                border: 0px;
-                padding-top: .5rem;
-                padding-bottom: .5rem;
-                box-shadow: $shadow_main;
-                transition: all 0.15s ease-in-out;
+            .displaySearchBar{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
 
-                &:focus{
-                    box-shadow: $shadow_hover;
+                .personalHello{
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin-bottom: .5rem;
+                    span{
+                        @include text_fade;
+                    }
                 }
             }
+
+                .form-control{
+                    border: 0px;
+                    padding-top: .5rem;
+                    padding-bottom: .5rem;
+                    box-shadow: $shadow_main;
+                    transition: all 0.15s ease-in-out;
+    
+                    &:focus{
+                        box-shadow: $shadow_hover;
+                    }
+                }
 
             @media screen and (min-width: 768px) {
                 .lna_search_logo{

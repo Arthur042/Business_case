@@ -27,18 +27,33 @@
                         <img src="img/header/animalerieLogo.png" alt="logo de la nîmes'alerie">
                     </div>
                     <!-- fin logo -->
-                    <!-- barre de recherche -->
-                    <form action="" method="get" class="col-9 col-md-5 ps-5 mb-3 mt-2">
-                        <div class="input-group d-inline-block ">
-                            <div class="form-outline">
-                                <input type="search" id="search" class="form-control"
-                                    placeholder="Recherche ( nom du produit, marque )" />
-                                <label class="form-label d-none" for="search">barre de recherche</label>
+                    <div class="displaySearchBar col-9 col-md-5 ps-5">
+                        <?php
+                            if (isset($_SESSION['isConnected'])) {
+                                ?>
+                                <p class="personalHello">Bonjour <span><?=$_COOKIE['name']?></span></p>
+                                <?php
+                            }
+                        ?>
+                        <!-- barre de recherche -->
+                        <form action="" method="get" class="<?php 
+                        if (isset($_SESSION['isConnected'])) {
+                            echo 'mt-0';
+                        } else {
+                            echo 'mt-4';
+                        }
+                        ?>">
+                            <div class="input-group d-inline-block ">
+                                <div class="form-outline">
+                                    <input type="search" id="search" class="form-control"
+                                        placeholder="Recherche ( nom du produit, marque )" />
+                                    <label class="form-label d-none" for="search">barre de recherche</label>
+                                </div>
+                                <button type="button" class="btn lna_btn_fade d-none d-md-inline-block">
+                                    <span class="lna_search_logo"></span></button>
                             </div>
-                            <button type="button" class="btn lna_btn_fade d-none d-md-inline-block">
-                                <span class="lna_search_logo"></span></button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                     <!-- fin barre de recherche -->
 
                     <!-- icone + menu burger -->
