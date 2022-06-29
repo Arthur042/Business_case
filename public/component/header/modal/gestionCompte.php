@@ -1,4 +1,4 @@
-<div class="gestionDeCompteModal ">
+<div class="gestionDeCompteModal d-none">
     <div class="myModalBody">
         <!-- liste des liens degestion de compte -->
         <ul>
@@ -12,7 +12,7 @@
             <div></div>
             <li><a href="">Mes adresses</a></li>
             <div></div>
-            <li><a href="">Déconnexion</a></li>
+            <li><a href="traitement/logout.php">Déconnexion</a></li>
         </ul>
     </div>
 </div>

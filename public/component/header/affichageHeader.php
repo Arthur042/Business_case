@@ -59,21 +59,25 @@
                                     ?>
                                 </p>
                             <?php
-                            // Si l'utilisateur est connecté et que la sessionest ouverte
-                            if (isset($_SESSION['isConnected'])) {
-                                include_once 'component/header/modal/gestionCompte.php';
-                            } elseif (!empty($_COOKIE['session'])){
-                                $_SESSION['isConnected'] = true;
-                                $_SESSION['name']= $_COOKIE['name'];
-                                header('Location: index.php');
-                            } else{
-                                // import du snippet de connexion ---------------------------------------------------------------------
-                                    include_once 'component/header/modal/connection.php';
-                                // import du snippet d'inscription ---------------------------------------------------------------------
-                                    include_once 'component/header/modal/inscription.php';
-                            }
+                                // Si l'utilisateur est connecté et que la sessionest ouverte
+                                    if (isset($_SESSION['isConnected'])) {
+                                        include_once 'component/header/modal/gestionCompte.php';
+                                    } 
                             ?>
-                            </div>
+                        </div>
+                            <?php
+                                // Si il y a un cookie mais aps de ssession on recharge la page et on génère un cookie
+                                if (!empty($_COOKIE['session'])){
+                                    $_SESSION['isConnected'] = true;
+                                    $_SESSION['name']= $_COOKIE['name'];
+                                    header('Location: index.php');
+                                } else{ // Si il n'y a pas de cookie ou de session affiche les formulaire de connexion et inscription
+                                    // import du snippet de connexion ---------------------------------------------------------------------
+                                        include_once 'component/header/modal/connection.php';
+                                    // import du snippet d'inscription ---------------------------------------------------------------------
+                                        include_once 'component/header/modal/inscription.php';
+                                }
+                            ?>
 
 
                             <!-- icone panier -->

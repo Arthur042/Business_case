@@ -7,3 +7,4 @@
 <script src="./javascript/showPassword.js"></script>
 <script src="./javascript/navBarOffCanvas.js"></script>
 <script src="./javascript/panierToggle.js"></script>
+<script src="./javascript/gestionCompteToggle.js"></script>
