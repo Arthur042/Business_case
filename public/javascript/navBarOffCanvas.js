@@ -34,11 +34,11 @@ function toggleOffCanva(offcanva) {
         isOffcanvaOpen.style.top = '-700px';
         if (!offcanva.classList.contains('offcanvaIsActived')) {
             offcanva.classList.add('offcanvaIsActived');
-            offcanva.style.top = '-57px';
+            offcanva.style.top = '-9px';
         }
     }else {
         offcanva.classList.add('offcanvaIsActived');
-        offcanva.style.top = '-57px';
+        offcanva.style.top = '-9px';
     }
 }
 

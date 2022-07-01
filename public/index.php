@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <?php  
+    $pageName = "La nîmes'alerie";
     @include_once 'component/doctype.php';
 ?>
 <body>

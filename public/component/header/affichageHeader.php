@@ -31,7 +31,7 @@
                         <?php
                             if (isset($_SESSION['isConnected'])) {
                                 ?>
-                                <p class="personalHello">Bonjour <span><?=$_COOKIE['name']?></span></p>
+                                <p class="personalHello">Bonjour <span><?=htmlentities($_COOKIE['name'])?></span></p>
                                 <?php
                             }
                         ?>

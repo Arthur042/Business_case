@@ -5,6 +5,8 @@ compteToggle.addEventListener("click", (e) => {
     if (compte.classList.contains("d-none")){
         compte.classList.remove("d-none");
         compte.classList.add("is-activated");
+    }else if (compte.classList.contains("is-activated")){   // Si on clique sur le boutton alors que la modal est ouverte, redirection vers la page gestion de compte
+        window.location.href = "monComtpe.php";
     }else {
         compte.classList.add("d-none");
         compte.classList.remove("is-activated");
